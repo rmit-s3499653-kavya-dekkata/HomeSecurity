@@ -78,11 +78,12 @@
 								<div id="invalid" style="display: none; text-align: left;"></div>
 								<div class="form-group">
 									<form action="">
-										<input type="hidden" name="writeToDB" value="set">
-										<input id="login" type="submit" class="btn btn-warning btn-block" 
-										style="height: 40px" value="Login" onclick="window.href.location = 'dashBoard.jsp'">
+										<input type="hidden" name="writeToDB" value="set"> <input
+											id="login" type="submit" class="btn btn-warning btn-block"
+											style="height: 40px" value="Login"
+											onclick="window.href.location = 'dashBoard.jsp'">
 									</form>
-									
+
 									<p style="display: none;" class="help-block">
 										<a class="pull-right text-muted" href="#" id="olvidado">Forgot
 											your password?</a>
@@ -132,7 +133,8 @@
     			System.out.println("Inserting all students in database");
     			List<Map<String, AttributeValue>> item2;
     			item2 = instance.getByAttribute(client, tableName, "common", "all");
-    			instance.insertAllStudents(client,tableName);		
+    			instance.insertAllStudents(client,tableName);	
+    			response.sendRedirect("localhost:8080//HomeSecurity/dashBoard.jsp");
     			%>
 				<h3>Device table inserted</h3>	
 		  <%
@@ -141,6 +143,7 @@
     	}
     	
     	%>
+    	</div></div></div></div>
 			 </div>		
 </body>
 </html>

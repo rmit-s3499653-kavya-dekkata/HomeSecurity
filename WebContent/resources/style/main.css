@@ -6,269 +6,86 @@ body {
 	overflow: hidden;
 	height: 100%;
 	font-family: Oxygen;
+	background-color: #ccc;
 }
 
-.jumbotron {
-	padding-top: 0px;
-	padding-left: 0;
-	padding-bottom: 2%;
-	background-color: #337ab7;
-	height:100%;
-}
 
 .container {
 	width: 100%;
 	height: 100%;
-	background-color: #337ab7;
 }
 
 
-/*============================
-		Header
-==============================*/
+.navbar, .dropdown-menu{
 
-#icons {
-	height: 24px;
-	width: 24px;
-	vertical-align: middle;
+	background-color: #8999A8;
+border: none;
 }
 
-img.logo {
-	margin-left: 20px;
-	height: 80px;
+.nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
+  border-bottom: 3px solid transparent;
 }
-
-
-#nav {
-	float: right;
+.nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  border-bottom: 3px solid transparent;
+  background: none;
 }
-
-#navbarrr {
-	display: inline-table;
-	margin-right: 1px;
-	margin-left: 1px;
-	padding-left: 3px;
-	padding-right: 3px;
-	border-left: none;
-	border-right: 2px solid #ccc;
-	border-top: none;
-	border-bottom: none;
-	height: 40px;
+.navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
+ color: #fff;
 }
-
-.btn-primary, .btn-success, .btn-danger {
-	padding: 10px;
-	height: 40px;
-	border-radius: 3px;
-	border: none;
-}
-
-.btn-wwarning{
-	background-color: #f06128;
-}
-
-hr {
-	border: 1px solid #ccc;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-
-/* -----------------------SIDEBAR---------------------------- */
-
-  nav.sidebar, .main{
-    -webkit-transition: margin 200ms ease-out;
-      -moz-transition: margin 200ms ease-out;
-      -o-transition: margin 200ms ease-out;
-      transition: margin 200ms ease-out;
-  }
-
-  .main{
-    padding: 0px 10px 0 0px;
-  }
-
-
- @media (max-width: 767px) {
- 	.col-sm-2.col-md-2.col-lg-2.sidebarsm {
- 		height: initial;
- 	}
-
- 	.main {
- 		margin-left: 7px;
- 		overflow: scroll;
- 		margin-right: 8px;
-
- 	}
- }
-
- @media (min-width: 768px) {
-
-	.col-sm-2.col-md-2.col-lg-2.sidebarsm {
- 		height: 100%;
- 	}
-
-    .main{
-      position: absolute;
-      width: calc(100% - 160px);
-      margin-left: 160px;
-      float: right;
-    }
-
-	.panel.panel-default.workarea {
-		height: 88%;
-	}
-
-    nav.sidebar:hover + .main{
-      margin-left: 160px;
-    }
-
-    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-      margin-left: 0px;
-    }
-
-    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
-      text-align: center;
-      width: 100%;
-      margin-left: 0px;
-    }
-
-    nav.sidebar a{
-      padding-right: 13px;
-    }
-
-    nav.sidebar .navbar-nav > li:first-child{
-      border-top: 1px #e5e5e5 solid;
-    }
-
-    nav.sidebar .navbar-nav > li{
-      border-bottom: 1px #e5e5e5 solid;
-    }
-
-    nav.sidebar .navbar-nav .open .dropdown-menu {
-      position: static;
-      float: none;
-      width: auto;
-      margin-top: 0;
-      background-color: transparent;
-      border: 0;
+.dropdown-menu{
       -webkit-box-shadow: none;
-      box-shadow: none;
-    }
+    box-shadow:none;
+}
 
-    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
-      padding: 0 0px 0 0px;
-    }
+.nav li:hover:nth-child(8n+1), .nav li.active:nth-child(8n+1){
+  border-bottom: #C4E17F 3px solid;
+}
+.nav li:hover:nth-child(8n+2), .nav li.active:nth-child(8n+2){
+  border-bottom: #F7FDCA 3px solid;
+}
+.nav li:hover:nth-child(8n+3), .nav li.active:nth-child(8n+3){
+  border-bottom: #FECF71 3px solid;
+}
+.nav li:hover:nth-child(8n+4), .nav li.active:nth-child(8n+4){
+  border-bottom: #F0776C 3px solid;
+}
+.nav li:hover:nth-child(8n+5), .nav li.active:nth-child(8n+5){
+  border-bottom: #DB9DBE 3px solid;
+}
+.nav li:hover:nth-child(8n+6), .nav li.active:nth-child(8n+6){
+  border-bottom: #C49CDE 3px solid;
+}
+.nav li:hover:nth-child(8n+7), .nav li.active:nth-child(8n+7){
+  border-bottom: #669AE1 3px solid;
+}
+.nav li:hover:nth-child(8n+8), .nav li.active:nth-child(8n+8){
+  border-bottom: #62C2E4 3px solid;
+}
 
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-      color: #777;
-    }
-
-    nav.sidebar{
-      width: 160px;
-      height: 90%;
-      margin-left: -20px;
-      float: left;
-      margin-bottom: 0px;
-    }
-
-    nav.sidebar li {
-      width: 100%;
-    }
-
-    nav.sidebar:hover{
-      margin-left: -20px;
-    }
-
-    .forAnimate{
-      opacity: 0;
-    }
-  }
-
-  @media (min-width: 1330px) {
-
-    .main{
-      width: calc(100% - 200px);
-      margin-left: 200px;
-    }
-
-    nav.sidebar{
-      width: 200px;
-      height: 92%;
-      margin-left: -20px;
-      float: left;
-      margin-bottom: 0px;
-    }
-
-    nav.sidebar .forAnimate{
-      opacity: 1;
-    }
-  }
-
-  nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
-    color: #CCC;
-    background-color: transparent;
-  }
-
-  nav:hover .forAnimate{
-    opacity: 1;
-  }
-  section{
-    padding-left: 15px;
-  }
+.navbar-toggle .icon-bar{
+    color: #fff;
+    background: #fff;
+}
 
 
+.radioBtn .notActive{
+    color: #3276b1;
+    background-color: #fff;
+}
 
-  .panel-body.workspace {
-  	padding:0;
-  	height:100%;
-  }
+a.btn.btn-primary {
+	width: 100px;
+	height: 50px;
+	text-align:center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 
+a.btn.btn-primary>h3 {
+	margin:0;
+}
 
-  /* ---------------------   USER DASHBOARD   ------------------------ */
-
-  .dashpanels {
-
-  }
-
-  .dashIcons {
-  }
-
-  .dashIcons> h3 {
-  	color: white;
-  }
-
-  .dashpanels.apps {
-  	background-color: #f9a132;
-  }
-
-  .dashpanels.sear {
-  	background-color: #5ac8e6;
-  }
-
-  .dashpanels.ch {
-  	background-color: #f9889d;
-  }
-
-  .dashpanels.st {
-  	background-color: #8ff38f;
-  }
-
-  .dashpanels.apps:hover{
-  	background-color: #df8f2b;
-  }
-
-  .dashpanels.sear:hover {
-  	background-color: #4ea1b8;
-  }
-
-  .dashpanels.ch:hover {
-  	background-color: #c66174;
-  }
-
-  .dashpanels.st:hover {
-  	background-color: #71c271;
-  }
-
-	.col-md-3>a, .col-md-6>a {
-		text-decoration: none;
-	}
+.panel-primary>.panel-heading {
+	background-color:#4CAF50;
+	border-color:#4CAF50;
+}
